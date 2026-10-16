@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c2ojar05uctw1"]
+
+[ext_resource type="Script" uid="uid://c75nyojbkcqpy" path="res://scripts/enemy_controller.gd" id="1_4gyqm"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_7k104"]
+load_path = "res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex"
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_55qv2"]
+size = Vector2(127, 128)
+
+[sub_resource type="LabelSettings" id="LabelSettings_55qv2"]
+font_size = 30
+
+[node name="Enemy" type="PathFollow2D" unique_id=1687523702]
+rotates = false
+loop = false
+script = ExtResource("1_4gyqm")
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2120322546]
+texture = SubResource("CompressedTexture2D_7k104")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1794225486]
+collision_layer = 4
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=352074716]
+position = Vector2(0.5, 0)
+shape = SubResource("RectangleShape2D_55qv2")
+
+[node name="Label" type="Label" parent="." unique_id=2144309328]
+offset_left = -57.0
+offset_top = -59.0
+offset_right = -17.0
+offset_bottom = -36.0
+text = "100"
+label_settings = SubResource("LabelSettings_55qv2")

@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bww2kymwil7hs"]
+
+[ext_resource type="Texture2D" uid="uid://dhddey6wo8r71" path="res://Totem_of_Undying_JE2_BE2.png" id="1_k1sas"]
+[ext_resource type="Script" uid="uid://cmhgeqrkcqykr" path="res://scripts/tower.gd" id="1_vedim"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_55qv2"]
+radius = 249.09837
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_55qv2"]
+radius = 70.0
+height = 160.0
+
+[node name="tower" type="Sprite2D" unique_id=1142562525]
+texture = ExtResource("1_k1sas")
+script = ExtResource("1_vedim")
+metadata/_edit_group_ = true
+metadata/_edit_lock_ = true
+
+[node name="CooldownTimer" type="Timer" parent="." unique_id=1204186920]
+one_shot = true
+
+[node name="WeaponRange" type="Area2D" parent="." unique_id=2135490113]
+collision_layer = 2
+collision_mask = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WeaponRange" unique_id=1810144018]
+shape = SubResource("CircleShape2D_55qv2")
+
+[node name="PlacementCollider" type="Area2D" parent="." unique_id=1043447538]
+collision_mask = 9
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlacementCollider" unique_id=1906988449]
+shape = SubResource("CapsuleShape2D_55qv2")

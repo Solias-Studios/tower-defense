@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cthoyetojwldf"]
+
+[ext_resource type="Texture2D" uid="uid://b3hdk2edyvgbk" path="res://hampter_xp.png" id="1_c7s6e"]
+[ext_resource type="Script" uid="uid://csml1417f3llt" path="res://scripts/map.gd" id="1_wijl4"]
+[ext_resource type="PackedScene" uid="uid://c2ojar05uctw1" path="res://enemy.tscn" id="2_e0an3"]
+[ext_resource type="PackedScene" uid="uid://bww2kymwil7hs" path="res://tower.tscn" id="4_p5pve"]
+
+[sub_resource type="Curve2D" id="Curve2D_p5pve"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1701, 667, 0, 0, 0, 0, 1575, 652, 0, 0, 0, 0, 1487, 642, 0, 0, 0, 0, 1364, 629, 0, 0, 0, 0, 1274, 619, 0, 0, 0, 0, 1134, 608, 0, 0, 0, 0, 1034, 602, 0, 0, 0, 0, 1008, 574, 0, 0, 0, 0, 983, 544, 0, 0, 0, 0, 955, 494, 0, 0, 0, 0, 943, 442, 0, 0, 0, 0, 948, 402, 0, 0, 0, 0, 962, 365, 0, 0, 0, 0, 976, 338, 0, 0, 0, 0, 993, 301, 0, 0, 0, 0, 1018, 258, 0, 0, 0, 0, 1046, 215, 0, 0, 0, 0, 1199, 62, 0, 0, 0, 0, 1252, 38, 0, 0, 0, 0, 1285, 25, 0, 0, 0, 0, 1298, 22, 0, 0, 0, 0, 1341, 33, 0, 0, 0, 0, 1369, 42, 0, 0, 0, 0, 1411, 61, 0, 0, 0, 0, 1436, 85, 0, 0, 0, 0, 1464, 121, 0, 0, 0, 0, 1505, 231, 0, 0, 0, 0, 1509, 286, 0, 0, 0, 0, 1472, 311, 0, 0, 0, 0, 1409, 375, 0, 0, 0, 0, 1325, 408, 0, 0, 0, 0, 1246, 416, 0, 0, 0, 0, 1132, 312, 0, 0, 0, 0, 1091, 166, 0, 0, 0, 0, 1229, 122, 0, 0, 0, 0, 1338, 138, 0, 0, 0, 0, 1442, 296, 0, 0, 0, 0, 1467, 385, 0, 0, 0, 0, 1589, 432, 0, 0, 0, 0, 1847, 498)
+}
+point_count = 40
+
+[node name="Map" type="Node2D" unique_id=902449974]
+script = ExtResource("1_wijl4")
+enemy = ExtResource("2_e0an3")
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1722557480]
+position = Vector2(960, 539.99994)
+scale = Vector2(1, 0.8999999)
+texture = ExtResource("1_c7s6e")
+metadata/_edit_lock_ = true
+
+[node name="tower" parent="." unique_id=847223976 instance=ExtResource("4_p5pve")]
+position = Vector2(1297, 243)
+tower_cooldown = 5.0
+target = "strongest"
+
+[node name="Path2D" type="Path2D" parent="." unique_id=939554643]
+curve = SubResource("Curve2D_p5pve")
