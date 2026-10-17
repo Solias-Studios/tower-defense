@@ -1,17 +1,16 @@
 [gd_scene format=3 uid="uid://bww2kymwil7hs"]
 
-[ext_resource type="Texture2D" uid="uid://dhddey6wo8r71" path="res://art/totem_placeholder.png" id="1_k1sas"]
+[ext_resource type="Texture2D" uid="uid://dcbgo2e5bpio1" path="res://art/friendly_placeholder.svg" id="1_r5ifr"]
 [ext_resource type="Script" uid="uid://cmhgeqrkcqykr" path="res://scripts/tower.gd" id="1_vedim"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_55qv2"]
 radius = 249.09837
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_55qv2"]
-radius = 70.0
-height = 160.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ejg0w"]
+size = Vector2(120, 120)
 
 [node name="tower" type="Sprite2D" unique_id=1142562525]
-texture = ExtResource("1_k1sas")
+texture = ExtResource("1_r5ifr")
 script = ExtResource("1_vedim")
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
@@ -30,4 +29,4 @@ shape = SubResource("CircleShape2D_55qv2")
 collision_mask = 9
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlacementCollider" unique_id=1906988449]
-shape = SubResource("CapsuleShape2D_55qv2")
+shape = SubResource("RectangleShape2D_ejg0w")

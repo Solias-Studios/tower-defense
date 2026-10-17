@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhddey6wo8r71"
-path="res://.godot/imported/totem_placeholder.png-1dfd9bbf91b0af0f54d3024ae325b23d.ctex"
+uid="uid://cs1o5jpsh5s1h"
+path="res://.godot/imported/enemy_placeholder.svg-676fbf592a22c62342cdccfdc2011fbd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/totem_placeholder.png"
-dest_files=["res://.godot/imported/totem_placeholder.png-1dfd9bbf91b0af0f54d3024ae325b23d.ctex"]
+source_file="res://art/enemy_placeholder.svg"
+dest_files=["res://.godot/imported/enemy_placeholder.svg-676fbf592a22c62342cdccfdc2011fbd.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3hdk2edyvgbk"
-path="res://.godot/imported/hampter_xp.png-1b3604a8180b7ca21c8e6283228df187.ctex"
+uid="uid://dcbgo2e5bpio1"
+path="res://.godot/imported/friendly_placeholder.svg-b9d2bbd4274d54e3ec63beaba17ed372.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/hampter_xp.png"
-dest_files=["res://.godot/imported/hampter_xp.png-1b3604a8180b7ca21c8e6283228df187.ctex"]
+source_file="res://art/friendly_placeholder.svg"
+dest_files=["res://.godot/imported/friendly_placeholder.svg-b9d2bbd4274d54e3ec63beaba17ed372.ctex"]
 
 [params]
 
@@ -38,3 +38,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false
