@@ -7,9 +7,9 @@
 
 [sub_resource type="Curve2D" id="Curve2D_s2aji"]
 _data = {
-"points": PackedVector2Array(0, 0, 0, 0, 1850, 479, 0, 0, 0, 0, 1803, 504, 0, 0, 0, 0, 1749, 524, 0, 0, 0, 0, 1683, 537, 0, 0, 0, 0, 1604, 537, 0, 0, 0, 0, 1533, 528, 0, 0, 0, 0, 1492, 521, 0, 0, 0, 0, 1454, 512, 0, 0, 0, 0, 1398, 492, 0, 0, 0, 0, 1344, 461, 0, 0, 0, 0, 1314, 438, 0, 0, 0, 0, 1254, 413, 0, 0, 0, 0, 1200, 386, 0, 0, 0, 0, 1127, 349, 0, 0, 0, 0, 1044, 309, 0, 0, 0, 0, 1006, 296, 0, 0, 0, 0, 968, 287, 0, 0, 0, 0, 939, 285, 0, 0, 0, 0, 906, 288, 0, 0, 0, 0, 866, 294, 0, 0, 0, 0, 829, 301, 0, 0, 0, 0, 746, 312, 0, 0, 0, 0, 703, 318, 0, 0, 0, 0, 666, 330, 0, 0, 0, 0, 628, 342, 0, 0, 0, 0, 587, 367, 0, 0, 0, 0, 564, 391, 0, 0, 0, 0, 540, 430, 0, 0, 0, 0, 503, 478, 0, 0, 0, 0, 487, 505, 0, 0, 0, 0, 477, 533, 0, 0, 0, 0, 471, 583, 0, 0, 0, 0, 484, 638, 0, 0, 0, 0, 502, 696, 0, 0, 0, 0, 526, 744, 0, 0, 0, 0, 545, 771, 0, 0, 0, 0, 573, 794, 0, 0, 0, 0, 634, 822, 0, 0, 0, 0, 688, 840, 0, 0, 0, 0, 754, 853, 0, 0, 0, 0, 810, 862, 0, 0, 0, 0, 856, 861, 0, 0, 0, 0, 913, 862, 0, 0, 0, 0, 962, 862, 0, 0, 0, 0, 1002, 860, 0, 0, 0, 0, 1045, 857, 0, 0, 0, 0, 1077, 851, 0, 0, 0, 0, 1112, 842, 0, 0, 0, 0, 1140, 830, 0, 0, 0, 0, 1163, 811, 0, 0, 0, 0, 1208, 769, 0, 0, 0, 0, 1242, 733, 0, 0, 0, 0, 1268, 705, 0, 0, 0, 0, 1296, 671, 0, 0, 0, 0, 1314, 618, 0, 0, 0, 0, 1316, 538, 0, 0, 0, 0, 1302, 466, 0, 0, 0, 0, 1287, 423, 0, 0, 0, 0, 1271, 384, 0, 0, 0, 0, 1248, 351, 0, 0, 0, 0, 1209, 321, 0, 0, 0, 0, 1179, 298, 0, 0, 0, 0, 1139, 271, 0, 0, 0, 0, 1093, 246, 0, 0, 0, 0, 1040, 221, 0, 0, 0, 0, 986, 204, 0, 0, 0, 0, 939, 190, 0, 0, 0, 0, 878, 181, 0, 0, 0, 0, 829, 178, 0, 0, 0, 0, 703, 192, 0, 0, 0, 0, 568, 217, 0, 0, 0, 0, 515, 227, 0, 0, 0, 0, 457, 242, 0, 0, 0, 0, 422, 256, 0, 0, 0, 0, 366, 283, 0, 0, 0, 0, 303, 366, 0, 0, 0, 0, 258, 465, 0, 0, 0, 0, 237, 573, 0, 0, 0, 0, 212, 687, 0, 0, 0, 0, 208, 783, 0, 0, 0, 0, 215, 888, 0, 0, 0, 0, 221, 991)
+"points": PackedVector2Array(0, 0, 0, 0, 1850, 479, 0, 0, 0, 0, 1803, 504, 0, 0, 0, 0, 1749, 524, 0, 0, 0, 0, 1683, 537, 0, 0, 0, 0, 1604, 537, 0, 0, 0, 0, 1533, 528, 0, 0, 0, 0, 1492, 521, 0, 0, 0, 0, 1454, 512, 0, 0, 0, 0, 1398, 492, 0, 0, 0, 0, 1344, 461, 0, 0, 0, 0, 1314, 438, 0, 0, 0, 0, 1254, 413, 0, 0, 0, 0, 1200, 386, 0, 0, 0, 0, 1127, 349, 0, 0, 0, 0, 1044, 309, 0, 0, 0, 0, 1006, 296, 0, 0, 0, 0, 968, 287, 0, 0, 0, 0, 939, 285, 0, 0, 0, 0, 906, 288, 0, 0, 0, 0, 866, 294, 0, 0, 0, 0, 829, 301, 0, 0, 0, 0, 746, 312, 0, 0, 0, 0, 703, 318, 0, 0, 0, 0, 666, 330, 0, 0, 0, 0, 628, 342, 0, 0, 0, 0, 587, 367, 0, 0, 0, 0, 564, 391, 0, 0, 0, 0, 540, 430, 0, 0, 0, 0, 503, 478, 0, 0, 0, 0, 487, 505, 0, 0, 0, 0, 477, 533, 0, 0, 0, 0, 471, 583, 0, 0, 0, 0, 484, 638, 0, 0, 0, 0, 502, 696, 0, 0, 0, 0, 526, 744, 0, 0, 0, 0, 545, 771, 0, 0, 0, 0, 573, 794, 0, 0, 0, 0, 634, 822, 0, 0, 0, 0, 688, 840, 0, 0, 0, 0, 754, 853, 0, 0, 0, 0, 810, 862, 0, 0, 0, 0, 856, 861, 0, 0, 0, 0, 913, 862, 0, 0, 0, 0, 962, 862, 0, 0, 0, 0, 1002, 860, 0, 0, 0, 0, 1045, 857, 0, 0, 0, 0, 1077, 851, 0, 0, 0, 0, 1112, 842, 0, 0, 0, 0, 1140, 830, 0, 0, 0, 0, 1163, 811, 0, 0, 0, 0, 1208, 769, 0, 0, 0, 0, 1242, 733, 0, 0, 0, 0, 1268, 705, 0, 0, 0, 0, 1296, 671, 0, 0, 0, 0, 1314, 618, 0, 0, 0, 0, 1316, 538, 0, 0, 0, 0, 1302, 466, 0, 0, 0, 0, 1287, 423, 0, 0, 0, 0, 1271, 384, 0, 0, 0, 0, 1248, 351, 0, 0, 0, 0, 1209, 321, 0, 0, 0, 0, 1179, 298, 0, 0, 0, 0, 1141, 269, 0, 0, 0, 0, 1097, 244, 0, 0, 0, 0, 1047, 219, 0, 0, 0, 0, 991, 201, 0, 0, 0, 0, 938, 185, 0, 0, 0, 0, 881, 176, 0, 0, 0, 0, 827, 172, 0, 0, 0, 0, 765, 178, 0, 0, 0, 0, 701, 187, 0, 0, 0, 0, 573, 209, 0, 0, 0, 0, 515, 227, 0, 0, 0, 0, 457, 242, 0, 0, 0, 0, 422, 256, 0, 0, 0, 0, 366, 283, 0, 0, 0, 0, 303, 366, 0, 0, 0, 0, 258, 465, 0, 0, 0, 0, 237, 573, 0, 0, 0, 0, 212, 687, 0, 0, 0, 0, 208, 783, 0, 0, 0, 0, 215, 888, 0, 0, 0, 0, 221, 991)
 }
-point_count = 82
+point_count = 83
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_kw81x"]
 radius = 47.000153
@@ -56,7 +56,7 @@ position = Vector2(960, 540)
 texture = ExtResource("4_ey7gg")
 metadata/_edit_lock_ = true
 
-[node name="Path2D" type="Path2D" parent="." unique_id=1974932931]
+[node name="EnemyPath" type="Path2D" parent="." unique_id=1974932931]
 curve = SubResource("Curve2D_s2aji")
 
 [node name="NonPlaceable" type="Area2D" parent="." unique_id=78954161]
@@ -69,67 +69,67 @@ position = Vector2(-26, 557)
 scale = Vector2(0.99999666, 0.99999666)
 shape = SubResource("CapsuleShape2D_kw81x")
 
-[node name="CollisionShape2D10" type="CollisionShape2D" parent="NonPlaceable" unique_id=1160930208]
+[node name="TR_CollisionShape10" type="CollisionShape2D" parent="NonPlaceable" unique_id=1160930208]
 position = Vector2(219.5159, 9.709976)
 scale = Vector2(0.99999666, 0.99999666)
 shape = SubResource("RectangleShape2D_kw81x")
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D9" type="CollisionShape2D" parent="NonPlaceable" unique_id=730975988]
+[node name="TR_CollisionShape11" type="CollisionShape2D" parent="NonPlaceable" unique_id=730975988]
 position = Vector2(36.031685, 136.67227)
 scale = Vector2(0.99999833, 0.99999833)
 shape = SubResource("RectangleShape2D_y3b3m")
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D8" type="CollisionShape2D" parent="NonPlaceable" unique_id=2124182274]
+[node name="TR_CollisionShape12" type="CollisionShape2D" parent="NonPlaceable" unique_id=2124182274]
 position = Vector2(454.48294, 23.975403)
 rotation = -2.2039826
 scale = Vector2(0.9999983, 0.9999983)
 shape = SubResource("RectangleShape2D_7qdja")
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D7" type="CollisionShape2D" parent="NonPlaceable" unique_id=2084128074]
+[node name="TR_CollisionShape13" type="CollisionShape2D" parent="NonPlaceable" unique_id=2084128074]
 position = Vector2(162, 188)
 rotation = 1.5665295
 scale = Vector2(0.99999917, 0.99999917)
 shape = SubResource("RectangleShape2D_7qdja")
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="NonPlaceable" unique_id=1566482823]
+[node name="TR_CollisionShape14" type="CollisionShape2D" parent="NonPlaceable" unique_id=1566482823]
 position = Vector2(98.21332, 132.32033)
 rotation = 0.42131016
 scale = Vector2(0.99999964, 0.99999964)
 shape = SubResource("RectangleShape2D_jgy8u")
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D5" type="CollisionShape2D" parent="NonPlaceable" unique_id=678824826]
+[node name="TR_CollisionShape15" type="CollisionShape2D" parent="NonPlaceable" unique_id=678824826]
 position = Vector2(112.3456, 234.74756)
 rotation = 0.120389745
 scale = Vector2(0.9999998, 0.9999998)
 shape = SubResource("RectangleShape2D_f7del")
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="NonPlaceable" unique_id=1020723209]
+[node name="TR_CollisionShape16" type="CollisionShape2D" parent="NonPlaceable" unique_id=1020723209]
 position = Vector2(399, 46)
 rotation = 3.1049979
 scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("CapsuleShape2D_7viyg")
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="NonPlaceable" unique_id=1207147936]
+[node name="TR_CollisionShape17" type="CollisionShape2D" parent="NonPlaceable" unique_id=1207147936]
 position = Vector2(436.99997, -13.999999)
 rotation = -1.5890937
 scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("CapsuleShape2D_b4pka")
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="NonPlaceable" unique_id=180902605]
+[node name="TR_CollisionShape18" type="CollisionShape2D" parent="NonPlaceable" unique_id=180902605]
 position = Vector2(54.999992, 255.99998)
 rotation = 2.9992516
 shape = SubResource("CapsuleShape2D_sbg4e")
 metadata/_edit_group_ = true
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="NonPlaceable" unique_id=940027998]
+[node name="TR_CollisionShape19" type="CollisionShape2D" parent="NonPlaceable" unique_id=940027998]
 position = Vector2(270, 109)
 rotation = 1.2248371
 shape = SubResource("CapsuleShape2D_gxrap")

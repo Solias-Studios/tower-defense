@@ -15,7 +15,7 @@ func _ready() -> void:
 	
 	for i in range(0, 20):
 		var new_enemy = enemy.instantiate()
-		$Path2D.add_child(new_enemy)
+		$EnemyPath.add_child(new_enemy)
 		new_enemy.progress_ratio = randf_range(0.0, 0.8)
 		new_enemy.speed = 100
 		new_enemy.name = "Enemy %d" % (i+1)
