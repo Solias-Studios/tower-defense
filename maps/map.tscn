@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cthoyetojwldf"]
 
-[ext_resource type="Texture2D" uid="uid://b3hdk2edyvgbk" path="res://hampter_xp.png" id="1_c7s6e"]
-[ext_resource type="Script" uid="uid://csml1417f3llt" path="res://scripts/map.gd" id="1_wijl4"]
-[ext_resource type="PackedScene" uid="uid://c2ojar05uctw1" path="res://enemy.tscn" id="2_e0an3"]
-[ext_resource type="PackedScene" uid="uid://bww2kymwil7hs" path="res://tower.tscn" id="4_p5pve"]
+[ext_resource type="Script" uid="uid://csml1417f3llt" path="res://scripts/map.gd" id="1_d6q2c"]
+[ext_resource type="PackedScene" uid="uid://c2ojar05uctw1" path="res://templates/enemy.tscn" id="2_d6q2c"]
+[ext_resource type="Texture2D" uid="uid://b3hdk2edyvgbk" path="res://art/hampter_xp.png" id="3_58o0d"]
+[ext_resource type="PackedScene" uid="uid://bww2kymwil7hs" path="res://templates/tower.tscn" id="4_w8fwg"]
 
 [sub_resource type="Curve2D" id="Curve2D_p5pve"]
 _data = {
@@ -12,16 +12,16 @@ _data = {
 point_count = 40
 
 [node name="Map" type="Node2D" unique_id=902449974]
-script = ExtResource("1_wijl4")
-enemy = ExtResource("2_e0an3")
+script = ExtResource("1_d6q2c")
+enemy = ExtResource("2_d6q2c")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1722557480]
 position = Vector2(960, 539.99994)
 scale = Vector2(1, 0.8999999)
-texture = ExtResource("1_c7s6e")
+texture = ExtResource("3_58o0d")
 metadata/_edit_lock_ = true
 
-[node name="tower" parent="." unique_id=847223976 instance=ExtResource("4_p5pve")]
+[node name="tower" parent="." unique_id=847223976 instance=ExtResource("4_w8fwg")]
 position = Vector2(1297, 243)
 tower_cooldown = 5.0
 target = "strongest"

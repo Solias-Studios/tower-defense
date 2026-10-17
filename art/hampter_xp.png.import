@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dhddey6wo8r71"
-path="res://.godot/imported/Totem_of_Undying_JE2_BE2.png-71187535da91df6453d642d4ebfe6f2f.ctex"
+uid="uid://b3hdk2edyvgbk"
+path="res://.godot/imported/hampter_xp.png-1b3604a8180b7ca21c8e6283228df187.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Totem_of_Undying_JE2_BE2.png"
-dest_files=["res://.godot/imported/Totem_of_Undying_JE2_BE2.png-71187535da91df6453d642d4ebfe6f2f.ctex"]
+source_file="res://art/hampter_xp.png"
+dest_files=["res://.godot/imported/hampter_xp.png-1b3604a8180b7ca21c8e6283228df187.ctex"]
 
 [params]
 

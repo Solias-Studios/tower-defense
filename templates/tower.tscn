@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bww2kymwil7hs"]
 
-[ext_resource type="Texture2D" uid="uid://dhddey6wo8r71" path="res://Totem_of_Undying_JE2_BE2.png" id="1_k1sas"]
+[ext_resource type="Texture2D" uid="uid://dhddey6wo8r71" path="res://art/totem_placeholder.png" id="1_k1sas"]
 [ext_resource type="Script" uid="uid://cmhgeqrkcqykr" path="res://scripts/tower.gd" id="1_vedim"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_55qv2"]

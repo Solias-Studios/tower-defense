@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://b10mmj7m7h0ee"]
 
-[ext_resource type="Texture2D" uid="uid://ugs5ixcf5xb0" path="res://map_CliffsidePond.png" id="1_7qj7j"]
-[ext_resource type="Script" uid="uid://csml1417f3llt" path="res://scripts/map.gd" id="1_s2aji"]
-[ext_resource type="PackedScene" uid="uid://c2ojar05uctw1" path="res://enemy.tscn" id="2_cbcs1"]
-[ext_resource type="PackedScene" uid="uid://bww2kymwil7hs" path="res://tower.tscn" id="4_kw81x"]
+[ext_resource type="Script" uid="uid://csml1417f3llt" path="res://scripts/map.gd" id="1_d355j"]
+[ext_resource type="PackedScene" uid="uid://c2ojar05uctw1" path="res://templates/enemy.tscn" id="2_d355j"]
+[ext_resource type="PackedScene" uid="uid://bww2kymwil7hs" path="res://templates/tower.tscn" id="3_d355j"]
+[ext_resource type="Texture2D" uid="uid://ugs5ixcf5xb0" path="res://art/map_CliffsidePond.png" id="4_ey7gg"]
 
 [sub_resource type="Curve2D" id="Curve2D_s2aji"]
 _data = {
@@ -47,13 +47,13 @@ radius = 103.0
 height = 260.27545
 
 [node name="Cliffside Pond_map" type="Node2D" unique_id=1993646058]
-script = ExtResource("1_s2aji")
-enemy = ExtResource("2_cbcs1")
-tower = ExtResource("4_kw81x")
+script = ExtResource("1_d355j")
+enemy = ExtResource("2_d355j")
+tower = ExtResource("3_d355j")
 
 [node name="Background" type="Sprite2D" parent="." unique_id=1820046754]
 position = Vector2(960, 540)
-texture = ExtResource("1_7qj7j")
+texture = ExtResource("4_ey7gg")
 metadata/_edit_lock_ = true
 
 [node name="Path2D" type="Path2D" parent="." unique_id=1974932931]
