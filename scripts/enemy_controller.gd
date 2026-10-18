@@ -1,4 +1,5 @@
 extends PathFollow2D
+class_name EnemyController
 
 signal died
 

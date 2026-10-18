@@ -2,6 +2,15 @@
 
 [ext_resource type="Texture2D" uid="uid://dcbgo2e5bpio1" path="res://art/friendly_placeholder.svg" id="1_r5ifr"]
 [ext_resource type="Script" uid="uid://cmhgeqrkcqykr" path="res://scripts/tower.gd" id="1_vedim"]
+[ext_resource type="PackedScene" uid="uid://yg3tuiks24cv" path="res://templates/base_projectile.tscn" id="3_7kfbb"]
+[ext_resource type="Script" uid="uid://c52ds4yu4nsk6" path="res://templates/base_projectile.gd" id="4_6044x"]
+
+[sub_resource type="Resource" id="Resource_rbkil"]
+script = ExtResource("4_6044x")
+behavior_scene = ExtResource("3_7kfbb")
+speed = 900.0
+damage = 30
+metadata/_custom_type_script = "uid://c52ds4yu4nsk6"
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_55qv2"]
 radius = 249.09837
@@ -12,6 +21,7 @@ size = Vector2(120, 120)
 [node name="tower" type="Sprite2D" unique_id=1142562525]
 texture = ExtResource("1_r5ifr")
 script = ExtResource("1_vedim")
+tower_projectile = SubResource("Resource_rbkil")
 metadata/_edit_group_ = true
 metadata/_edit_lock_ = true
 

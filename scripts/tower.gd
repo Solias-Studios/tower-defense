@@ -1,8 +1,32 @@
 extends Sprite2D
+class_name TowerController
+
+enum TargetType {
+	## Targets the first enemy in its range
+	FIRST,
+	## Targets the enemy with the most health in its range
+	STRONGEST,
+	## Targets the last enemy in its range
+	LAST
+}
+
+enum TowerType {
+	## Attacks within a limited range
+	RANGED,
+	## Attacks within a limited area around itself
+	AOE,
+	## Attacks within areas directly next to it
+	MELEE,
+	## Attacks anywhere on the map
+	GLOBAL
+}
+
 @export var tower_cooldown: float = 1.0
 @export var tower_damage: float = 1.0
 @export var active: bool = false
-@export_enum("first", "strongest", "last") var target: String = "first"
+@export var target: TargetType = TargetType.FIRST
+@export var tower_type: TowerType = TowerType.RANGED
+@export var tower_projectile: ProjectileData
 
 var delta_time: float = 0.0 # my beloved
 
@@ -24,31 +48,37 @@ func _process(delta: float) -> void:
 		#var area: Area2D = $"."
 		#
 		var enemies: Array[Area2D] = $WeaponRange.get_overlapping_areas()
-		var to_attack: PathFollow2D
+		var to_attack: EnemyController
 		
 		if enemies.size() == 0:
 			return
 		
 		match target:
-			"first":
+			TargetType.FIRST:
 				for enemy in enemies:
 					if to_attack == null or enemy.get_parent().progress_ratio > to_attack.progress_ratio:
 						to_attack = enemy.get_parent()
-			"strongest":
+			TargetType.STRONGEST:
 				for enemy in enemies:
 					if to_attack == null or enemy.get_parent().health > to_attack.health:
 						to_attack = enemy.get_parent()
-			"last":
+			TargetType.LAST:
 				for enemy in enemies:
 					if to_attack == null or enemy.get_parent().progress_ratio < to_attack.progress_ratio:
 						to_attack = enemy.get_parent()
-				
+
 		if to_attack != null:
-			to_attack.hit(tower_damage)
+			#to_attack.hit(tower_damage)
+			var proj = tower_projectile.behavior_scene.instantiate() as ProjectileController
+			proj.position = global_position
+			proj.data = tower_projectile
+			proj.target_position = to_attack.global_position
+			
+			get_tree().current_scene.add_child(proj)
+			print(proj)
+			
 			$CooldownTimer.wait_time = tower_cooldown
 			$CooldownTimer.start()
-
-
 
 #func _on_area_entered(area: Area2D) -> void:
 	#if not $CooldownTimer.is_stopped():
