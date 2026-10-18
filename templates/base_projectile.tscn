@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://yg3tuiks24cv"]
+
+[ext_resource type="Script" uid="uid://b1dndd8rt3qpv" path="res://scripts/templates/projectile_arrow.gd" id="1_hpbfl"]
+[ext_resource type="Texture2D" uid="uid://d1ql3rkfq2sv5" path="res://art/projectile_arrow.png" id="2_hpbfl"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d355j"]
+height = 64.0
+
+[node name="BaseProjectile" type="Area2D" unique_id=228313386]
+collision_layer = 2
+collision_mask = 4
+script = ExtResource("1_hpbfl")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=174696891]
+position = Vector2(-9.536743e-07, 2.842171e-14)
+rotation = 1.5707964
+scale = Vector2(0.99999994, 0.99999994)
+shape = SubResource("CapsuleShape2D_d355j")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=886188926]
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_hpbfl")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="." unique_id=1126996296]
+rect = Rect2(-32, -10, 64, 20)
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_screen_exit"]
