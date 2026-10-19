@@ -1,7 +1,11 @@
 [gd_resource type="Resource" script_class="ProjectileData" format=3 uid="uid://dotmf7d1nkavo"]
 
+[ext_resource type="PackedScene" uid="uid://yg3tuiks24cv" path="res://templates/base_projectile.tscn" id="1_kp4wb"]
 [ext_resource type="Script" uid="uid://c52ds4yu4nsk6" path="res://templates/base_projectile.gd" id="1_mjm33"]
 
 [resource]
 script = ExtResource("1_mjm33")
+behavior_scene = ExtResource("1_kp4wb")
+speed = 900.0
+damage = 40
 metadata/_custom_type_script = "uid://c52ds4yu4nsk6"

@@ -38,8 +38,8 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	delta_time += delta
 	
-	if (delta_time > 0.5):
-		delta_time -= 0.5
+	if (delta_time > 0.05):
+		delta_time -= 0.05
 		if not $CooldownTimer.is_stopped() or not active:
 			return
 		
